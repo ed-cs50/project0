@@ -1,0 +1,86 @@
+body {
+  background: white;
+  color: #000;
+  text-align: center; }
+
+h1 {
+  color: #AA0829;
+  font: "Syntax", Helvetica, sans-serif;
+  font-size: 24px;
+  text-align: center; }
+
+p {
+  font: bold 16px Georgia, serif;
+  line-height: 1.4; }
+
+.titleCCG {
+  color: #AA0829;
+  font-family: Georgia, serif;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 1;
+  text-align: center;
+  margin: 10px; }
+
+.subtitleCCG {
+  color: black;
+  font-family: Georgia, serif;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+  margin: 10px 40px 40px 40px; }
+
+#menuCCG {
+  display: none; }
+
+.container #menuCCG {
+  display: block; }
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap; }
+
+.flex-container > div {
+  background-color: #e0ded8;
+  width: 400px;
+  margin: 10px;
+  padding: 10px; }
+
+.flex-container {
+  padding: 5px; }
+  .flex-container th {
+    color: #AA0829; }
+  .flex-container td {
+    color: black; }
+
+.testcol1, .testcol2, .testcol3 {
+  font-family: monospace;
+  font-size: 12px;
+  padding: 20px;
+  margin: 20px; }
+
+.testcol1 {
+  background-color: green; }
+
+.testcol2 {
+  background-color: yellow; }
+
+.testcol3 {
+  background-color: orange; }
+
+/* media */
+@media (max-width: 1000px) {
+  body {
+    background: white; }
+
+  .container #menuCCG {
+    display: none; }
+
+  #menuCCG {
+    display: block; } }
+@media print {
+  text-align: left;
+  .container #menuCCG {
+    display: none; } }
+
+/*# sourceMappingURL=CCG-scss.css.map */

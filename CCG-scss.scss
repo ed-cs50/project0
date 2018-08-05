@@ -1,0 +1,116 @@
+$bgcolorpage: white;
+$bgcolorproject: #e0ded8;
+$titlecolor: #AA0829;
+$subtitlecolor: black;
+
+
+
+
+
+body {
+    background: $bgcolorpage;
+    color: #000;
+	text-align: center;
+}
+
+
+h1 {
+    color: $titlecolor;
+    font: "Syntax", Helvetica, sans-serif;
+	font-size: 24px;
+	text-align: center;
+}
+
+p {
+	font: bold 16px Georgia, serif;
+	line-height: 1.4;
+	}
+
+.titleCCG {
+    color: $titlecolor;
+    font-family: Georgia, serif;
+    font-weight: bold;
+	font-size: 45px;
+	line-height: 1;
+	text-align: center;
+	margin: 10px;
+}
+.subtitleCCG {
+    color: $subtitlecolor;
+    font-family: Georgia, serif;
+    font-weight: bold;
+	font-size: 25px;
+	text-align: center;
+	margin: 10px 40px 40px 40px;
+}
+
+
+#menuCCG { display: none; }
+
+.container #menuCCG { display: block; }
+
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-container > div {
+  background-color: $bgcolorproject;
+  width: 400px;
+  margin: 10px;
+  padding: 10px;
+}
+
+
+// nesting
+.flex-container {
+  padding: 5px;
+
+  th {
+  color:  $titlecolor;
+  }
+
+  td {
+    color:  black;
+  }
+}
+
+// inheritance
+%message {
+  font-family: monospace;
+  font-size: 12px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.testcol1 {
+  @extend %message;
+  background-color: green;
+}
+
+.testcol2 {
+  @extend %message;
+  background-color: yellow;
+}
+
+.testcol3 {
+  @extend %message;
+  background-color: orange;
+}
+
+
+
+/* media */
+
+@media (max-width: 1000px) {
+	body { background: $bgcolorpage; }
+	.container #menuCCG { display: none; }
+	#menuCCG { display: block; }
+}
+
+
+@media print {
+	text-align: left;
+	.container #menuCCG { display: none; }
+}
